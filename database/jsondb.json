@@ -1,0 +1,25 @@
+{
+  "date":{
+    "type":"string",
+    "format":"mm-dd-yyyy"
+  },
+  "time":{
+    "type":"string",
+    "format":"hh:mm:ss"
+  },
+  "av_temp":{
+    "type":"float"
+  },
+  "A_temp":{
+    "type":"float"
+  },
+  "B_temp":{
+    "type":"float"
+  },
+  "C_temp":{
+    "type":"float"
+  },
+  "D_temp":{
+    "type":"float"
+  }
+}

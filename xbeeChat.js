@@ -7,7 +7,20 @@ var inString2;
 var inString3;
 var inString4;
 var sum = 0.00;
-var i = 1;//wzy
+var i = 1;
+
+var mongo = require('mongodb'),
+  Server = mongo.Server,
+  Db = mongo.Db;
+
+var server = new Server('localhost', 27017, {auto_reconnect: true});
+var db = new Db('foo', server);
+
+db.open(function(err, db) {
+  if(!err) {
+    console.log("We are connected");
+  }
+});
 
 var portName = process.argv[2],
 portConfig = {
@@ -53,19 +66,5 @@ sp.on("open", function () {
 		    sum = 0.00;
     }
     i++;
-
-
-    /*
-    io.emit("chat message", "Temperature: " + data);
-    inString1 = data.slice(7);
-
-      sum += parseInt(inString1);
-      i++;
-      if(i==1){
-         io.emit("chat message", "Average Temperature: " + inString1);
-         i=0;
-      }
-      */
-
   });
 });
