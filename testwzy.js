@@ -79,7 +79,7 @@ sp.on("open", function () {
               var dateCom = month+"/"+date+"/"+year;
               var timeCurr = hour+"/"+minute;
 
-              var item = {dateComdb: dateCom, dayComdb: day, timedb: timeCurr, av_tempdb: av_temp};
+              var item = {dateComdb: dateCom, daydb: day, timedb: timeCurr, av_tempdb: av_temp};
 
               //db.collection.insert(doc1);
               //db.collection.insert(doc2, {safe:true}, function(err, result) {});
