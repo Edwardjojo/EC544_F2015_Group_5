@@ -9,6 +9,7 @@ double sensorVal;  // the analog value input from arduino
 
 void setup() {
   // put your setup code here, to run once:
+  // add
   XBee.begin(9600);
   Serial.begin(9600);
   pinMode(A0, INPUT); //read the analog value input from PIN A0
